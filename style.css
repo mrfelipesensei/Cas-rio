@@ -1,0 +1,97 @@
+/* Importanto fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Aniyah&family=Cormorant+Garamond:wght@400;500&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+@font-face{
+    font-family: 'Aniyah';
+    src: url('Aniyah.ttf') format('truetype');
+}
+
+
+:root {
+    --verde-musgo: #4b5335;
+    --creme: #f6f3e8;
+    --dourado: #bfae80;
+    --branco-rosado: #fef9f3;
+    --verde-salvia: #8f9779;
+    --fonte-caixa-alta: 'Cinzel', serif;
+    --fonte-manuscrita: 'Aniyah', cursive;
+    --fonte-info: 'Cormorant Garamond', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--creme);
+    font-family: var(--fonte-info);
+    font-size: 1.5rem;
+    color: var(--verde-musgo);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--branco-rosado);
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+header h1{
+    font-family: var(--fonte-caixa-alta);
+    font-size: 2.5rem;
+    color: var(--verde-musgo);
+    margin-bottom: 0.5rem;
+}
+
+header p{
+    font-family: var(--fonte-manuscrita);
+    font-size: 2rem;
+    font-weight: 550;
+    color: var(--verde-musgo);
+}
+
+#contador {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #ddd;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    font-family: var(--fonte-caixa-alta);
+    font-size: 1.75rem;
+    color: var(--verde-musgo);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section p, li{
+    font-family: 'Lora', serif;
+}
+
+footer {
+    background-color: var(--verde-musgo);
+    color: var(--creme);
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: var(--fonte-manuscrita);
+    font-size: 1.25rem;
+}
