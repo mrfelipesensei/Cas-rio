@@ -31,33 +31,42 @@
 body {
     background-color: var(--creme);
     font-family: var(--fonte-info);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--verde-musgo);
-    line-height: 1.6;
+    line-height: 1.75;
+    scroll-behavior: smooth;
+    padding-top: 1rem;
 }
 
 header {
     background-color: var(--branco-rosado);
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 header img {
-    max-width: 200px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    border: 3px solid var(--dourado);
 }
 
 header h1{
     font-family: var(--fonte-caixa-alta);
-    font-size: 2.5rem;
-    color: var(--verde-musgo);
-    margin-bottom: 0.5rem;
+    font-size: 2.75rem;
+    letter-spacing: 1px;
+    margin: 0;
 }
 
 header p{
     font-family: var(--fonte-manuscrita);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 550;
     color: var(--verde-musgo);
 }
@@ -69,19 +78,30 @@ header p{
 }
 
 section {
-    padding: 2rem 1rem;
+    padding: 3rem 1.5rem;
     border-bottom: 1px solid #ddd;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
+    animation: fadeIn 1s ease;
 }
 
 section h2 {
     font-family: var(--fonte-caixa-alta);
-    font-size: 1.75rem;
-    color: var(--verde-musgo);
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
+    position: relative;
 }
+
+section h2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: var(--dourado);
+    margin: 0.5rem auto 0;
+}
+
 
 section p, li{
     font-family: 'Lora', serif;
@@ -91,7 +111,7 @@ footer {
     background-color: var(--verde-musgo);
     color: var(--creme);
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     font-family: var(--fonte-manuscrita);
     font-size: 1.25rem;
 }
