@@ -101,9 +101,10 @@ header p{
 }
 
 #contador {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+    font-size: 2rem;
     font-weight: bold;
+    backdrop-filter: blur(6px);
+    margin-bottom: -30px;
 }
 
 section {

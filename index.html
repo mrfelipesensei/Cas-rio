@@ -52,6 +52,29 @@
         <br>
         <p>Felipe Oliveira & Maria Cristina</p>
     </footer>
-    <script></script>
+    <script>
+        function atualizarContador() {
+            const destino = new Date("2025-08-15T10:30:00");
+            const agora = new Date();
+            const diferenca = destino - agora;
+
+            if (diferenca <= 0) {
+                document.getElementById("contador").innerHTML = "É hoje! ❤️";
+                return;
+            }
+
+            const dias = Math.floor(diferenca/ (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferenca/ (1000 * 60 * 60)) % 24);
+            const minutos = Math.floor((diferenca/ (1000 * 60)) % 60);
+            const segundos = Math.floor((diferenca/ 1000) % 60);
+
+            document.getElementById("contador").innerHTML = 
+            `${dias} dias, ${horas}h ${minutos}min ${segundos}s`;
+
+        }
+
+        setInterval(atualizarContador, 1000);
+        atualizarContador();
+    </script>
 </body>
 </html>
