@@ -69,12 +69,12 @@ header {
 }
 
 .bottom-left {
-    bottom: 19px;
+    bottom: -100px;
     left: 0;
 }
 
 .bottom-right {
-    bottom: 19px;
+    bottom: -100px;
     right: 0;
 }
 
@@ -201,11 +201,22 @@ footer {
 
 @media (max-width: 768px) {
     .galho {
-        width: 100px;
+        width: 90px;
     }
 
+    .top-left,
+    .top-right {
+        top: 20px;
+    }
+
+    .bottom-left,
+    .bottom-right {
+        bottom: -45px;
+    }
+
+
     header h1 {
-        font-size: 3rem;
+        font-size: 1.2rem;
     }
 
 }
