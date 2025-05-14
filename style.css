@@ -39,7 +39,7 @@ body {
 }
 
 header {
-    background-color: var(--branco-rosado);
+    background-color: white;
     text-align: center;
     padding: 4rem 1rem;
     display: flex;
@@ -49,7 +49,36 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-header img {
+.galho {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.top-left {
+    top: 19px;
+    left: 0;
+}
+
+.top-right {
+    top: 19px;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 19px;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 19px;
+    right: 0;
+}
+
+header .fotocasal {
     width: 250px;
     height: 250px;
     object-fit: cover;
