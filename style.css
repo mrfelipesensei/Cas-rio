@@ -198,3 +198,14 @@ footer {
     font-family: var(--fonte-manuscrita);
     font-size: 1.25rem;
 }
+
+@media (max-width: 768px) {
+    .galho {
+        width: 100px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+}
