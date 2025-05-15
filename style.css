@@ -49,58 +49,60 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.galho {
-    position: absolute;
-    width: 200px;
-    height: auto;
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: 0;
+.galeria1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 1rem;
+    width: 100%;
+    max-width: 900px;
 }
 
-.top-left {
-    top: 19px;
-    left: 0;
-}
-
-.top-right {
-    top: 19px;
-    right: 0;
-}
-
-.bottom-left {
-    bottom: -100px;
-    left: 0;
-}
-
-.bottom-right {
-    bottom: -100px;
-    right: 0;
-}
-
-header .fotocasal {
-    width: 250px;
-    height: 250px;
+.galeria1 img{
     object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid var(--dourado);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.foto-lateral {
+    width: 250px;
+}
+
+.foto-central {
+    width: 350px;
 }
 
 header h1{
-    font-family: var(--fonte-caixa-alta);
+    font-family: var(--fonte-manuscrita);
     font-size: 2.75rem;
     letter-spacing: 1px;
     margin: 0;
+    margin-bottom: -25px;
 }
 
 header p{
-    font-family: var(--fonte-manuscrita);
-    font-size: 1.75rem;
+    font-family: var(--fonte-caixa-alta);
+    font-size: 2rem;
     font-weight: 550;
     color: var(--verde-musgo);
+    margin-top: -25px;
 }
 
 #contador {
+    margin-top: -25px;
     font-size: 2rem;
     font-weight: bold;
     backdrop-filter: blur(6px);
@@ -197,7 +199,19 @@ footer {
     text-align: center;
     padding: 3rem 1rem;
     font-family: var(--fonte-manuscrita);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+
+footer #p1 {
+    font-family: var(--fonte-info);
+    font-size: 1.5rem;
+    margin-bottom: -15px;
+}
+
+footer img {
+    margin-top: 25px;
+    width: 30px;
+    margin-bottom: -25px;
 }
 
 @media (max-width: 768px) {
@@ -217,7 +231,7 @@ footer {
 
 
     header h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
 }
