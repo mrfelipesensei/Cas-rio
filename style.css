@@ -69,6 +69,16 @@ header {
     mask-composite: intersect;
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
+    border-radius: 0;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (--webkit-appearance:none) {
+        .galeria1 img {
+            -webkit-mask-image: none !important;
+            mask-image: none !important;
+        }
+    }
 }
 
 .fade-in {
