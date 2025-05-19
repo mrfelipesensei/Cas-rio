@@ -116,6 +116,10 @@ header p{
     margin-bottom: -30px;
 }
 
+#nossa-historia p{
+    font-family: 'Lora', serif;
+}
+
 section {
     padding: 3rem 1.5rem;
     border-bottom: 1px solid #ddd;
