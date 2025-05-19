@@ -42,9 +42,86 @@
     </section>
     <section id="galeria">
         <h2>Galeria</h2>
-        <div class="fotos">
-            <!--Carrossel de Fotos-->
-        </div>
+            <div class="foto-carrossel">
+                <div class="carrossel-track">
+                    <div class="foto">
+                        <img src="couple (12).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (11).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (10).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (9).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (8).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (7).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (6).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (5).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (4).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (3).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (2).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (1).jpeg" alt="">
+                    </div>
+
+                    <!--Duplicado para loop-->
+
+                    <div class="foto">
+                        <img src="couple (12).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (11).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (10).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (9).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (8).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (7).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (6).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (5).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (4).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (3).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (2).jpeg" alt="">
+                    </div>
+                    <div class="foto">
+                        <img src="couple (1).jpeg" alt="">
+                    </div>
+
+                </div>
+            </div>
     </section>
     <footer>
         <p id="p1">Obrigado por fazer parte da nossa história!</p>
@@ -75,6 +152,20 @@
 
         setInterval(atualizarContador, 1000);
         atualizarContador();
+
+        document.addEventListener('DOMContentLoaded', function(){
+           
+           const carrossel = document.querySelector('.carrossel-track');
+           
+            carrossel.addEventListener('mouseenter', () => {
+                carrossel.classList.add('paused');
+            });
+
+            carrossel.addEventListener('mouseleave', () => {
+                carrossel.classList.remove('paused');
+            });
+
+        });
     </script>
 </body>
 </html>

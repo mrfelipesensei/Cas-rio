@@ -199,6 +199,48 @@ section h2::after {
     font-size: 1.4rem;
 }
 
+.foto-carrossel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carrossel-track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll 60s linear infinite;
+}
+.carrossel-track.paused {
+    animation-play-state: paused;
+}
+
+.foto {
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.foto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 
 footer {
     background-color: var(--verde-musgo);
