@@ -163,9 +163,14 @@ section h2::after {
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 1rem;
+}
+.info-card:nth-child(3) {
+    grid-column: 1/-1;
+    width: 50%;
+    justify-self: center;
 }
 
 .info-card {
@@ -212,6 +217,18 @@ section h2::after {
     font-weight: 500;
     font-size: 1.4rem;
 }
+
+.link-row {
+    display: flex;
+    gap: 1px;
+}
+
+.link-row a {
+    flex: 1;
+    text-align: center;
+    margin-top: -5px;
+}
+
 
 .foto-carrossel {
     overflow: hidden;
@@ -308,5 +325,16 @@ footer img {
         height: auto;
     }
 
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 
+    .info-card:nth-child(3) {
+        width: 100%;
+    }
+
+    .link-row{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
